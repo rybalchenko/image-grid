@@ -110,3 +110,44 @@ img {
 
 
 /* Grid clearfix */
+
+.ba-grid:before, .ba-grid:after {
+    content: " ";
+    display: table;
+}
+
+.ba-grid:after {
+    clear: both;
+}
+.ba-grid > [class*="ba-width-"]{
+    float: left;
+    padding-left: 10px;
+}
+.ba-grid{
+    margin-left: -10px;
+}
+.ba-grid + .ba-grid {
+    margin-top: 10px;
+}
+
+.ba-width-1-2{
+    width: 50%;
+}
+.ba-width-1-3{
+    width: 33.33333%;
+}
+.ba-width-2-3{
+    width: 66.66666%;
+}
+
+.ba-width-1-5 {
+  width: 20%;
+}
+
+.ba-width-1-6 {
+  width: 16.66%;
+}
+
+.ba-width-1-7 {
+  width: 14.2%;
+}
